@@ -27,23 +27,6 @@ app.use(bodyParser.json());
 // Add routes for stuff here ...
 app.use('/', index);
 
-// connect()
-
-
-// connect(function(con) {
-//   var q = "select * from schedule";
-//   try {
-//     con.query(q, function (err, result, fields) {
-//       if (err) {
-//         console.log(err);
-//       }else {
-//         console.log(result);
-//       }
-//     });
-//   }catch (err) {
-//     console.log(err);
-//   }
-// });
 
 app.listen(app.get('port'), function() {
   console.log(`Server listening on ${app.get("port")} press Ctrl-C to terminate`);
